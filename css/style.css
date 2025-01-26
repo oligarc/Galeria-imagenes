@@ -1,0 +1,81 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+/* Título */
+h1 {
+  margin: 20px 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Galería */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Columnas flexibles */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  grid-auto-rows: 200px; /* Altura de cada celda */
+  margin: 0 auto;
+}
+
+/* Imágenes */
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que las imágenes no se distorsionen */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* Aumentar el tamaño al pasar el ratón */
+}
+
+/* Diferentes tamaños de imagen (variados) */
+.gallery .small {
+  grid-column: span 1; /* Ocupa una columna */
+  grid-row: span 1; /* Ocupa una fila */
+}
+
+.gallery .medium {
+  grid-column: span 2; /* Ocupa dos columnas */
+  grid-row: span 2; /* Ocupa una fila */
+}
+
+.gallery .large {
+  grid-column: span 2; /* Ocupa dos columnas */
+  grid-row: span 2; /* Ocupa dos filas */
+}
+
+.gallery .between-large-and-xl {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+.gallery .extra-large {
+  grid-column: span 2; /* Ocupa tres columnas */
+  grid-row: span 5; /* Ocupa dos filas */
+}
+
+/* Texto descriptivo */
+figcaption {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}

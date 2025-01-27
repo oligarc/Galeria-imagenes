@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Agregar las versiones optimizadas
     picture.innerHTML = `
     <source srcset="output-adv/${img.filename}-small-1x..jpg 1x, output-adv/${img.filename}-small-2x..jpg 2x" media="(max-width: 480px)">
-    <source srcset="output-adv/${img.filename}-medium-1x..jpg 1x, output-adv/${img.filename}-medium-2x..jpg 2x" media="(max-width: 768px)">
-    <source srcset="output-adv/${img.filename}-large-1x..jpg 1x, output-adv/${img.filename}-large-2x..jpg 2x" media="(max-width: 1200px)">
+    <source srcset="output-adv/${img.filename}-medium-1x..jpg 1x, output-adv/${img.filename}-medium-2x..jpg 2x" media="(max-width: 1500px)">
+    <source srcset="output-adv/${img.filename}-large-1x..jpg 1x, output-adv/${img.filename}-large-2x..jpg 2x" media="(max-width: 2500px)">
     <img 
       src="output-adv/${img.filename}-large-1x..jpg" 
       alt="${img.description}" 
